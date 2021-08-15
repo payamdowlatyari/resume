@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Payam Dowlatyari</title>
+  <title>Payam Dowlatyari - Resume</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,39 +21,49 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="/css/resume.css" rel="stylesheet">
+  <link href="assets/css/resume.css" rel="stylesheet">
   <!-- fontawesome cdn -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js"></script>
   <script src="https://use.fontawesome.com/6675b002a4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
 <body id="page-top">
+  <div class="video-container">
+    <div class="color-overlay"></div>
+    <!-- <video autoplay loop muted>
+      <source src="assets/img/Pexels Videos 2866.mp4" type="video/mp4">
+    </video> -->
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
+
       <span class="d-block d-lg-none">
 
       </span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-1" src="/img/newBW00.png" alt="my photo" />
-      </span>
+      <!-- <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-0" src="assets/img/newBW00.png" alt="my photo" />
+      </span> -->
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="nav-col navbar-toggler-icon"><span class="oi" data-glyph="menu"></span></span>
+      <span class="nav-col navbar-toggler-icon"><span class="oi" data-glyph="menu"></span>
+      </span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav">
-        <li class="nav-item">
 
-          <div class=" mb-1" id="link-sub-2">
-
-          </div>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">Resume</a>
+          <a href="/index.html"><img src="/assets/img/payamd.png" width="125px" /></a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">My Resume</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -76,54 +86,44 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#membership">Memberships</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" id="chev-down" href="#about" style="font-size: 32px;"><i
+              class="fas fa-caret-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" id="chev-up" href="#top" style="font-size: 32px;"><i
+              class="fas fa-caret-up"></i></a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="top">
+    </section>
+
+    <hr class="m-0">
+
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <div class="side-logo text-md-right">
         </div>
-        <h1 class="fullName mb-1">
-          <i class="fa fa-code" aria-hidden="true"></i><br>
-          <span>Payam <br>Dowlatyari</span>
+        <h1 class="fullName mb-0">
+          <span> my<br> Resume. <br></span>
         </h1>
-        <div class="subheading mb-1 sub-name">Software Engineer</div>
-        <div class="social-icons text-md-left mb-0">
-          <a href="https://twitter.com/payamyam">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.facebook.com/payam.dowlatyari">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/payamdowlatyari">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/payamdowlatyari">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.quora.com/profile/Payam-Dowlatyari">
-            <i class="fab fa-quora"></i>
-          </a>
+
+        <div class="subheading mb-0 sub-name ml3">Software Engineer
         </div>
-        <div class="link-item">
-          <p class="text-md-left mb-2"><a href="mailto:pdowlaty@uci.edu">
-              pdowlatyari@gmail.com</a><br>
-          </p>
-          <p class="text-md-left mb-2"><a href="tel:916-547-8918">
-              +1 (916) 547 - 8918 </a> </p>
-          <p>
-            <a href=""
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pdowlatyari/meeting'});return false;">
-              <img src="/img/calendly-logo.png" />
-            </a>
-          </p>
-        </div>
+        <a href="/portfolio.html">
+          <span id="small-portfolio">Check out my Portfolio >>></span>
+        </a>
       </div>
   </div>
 
   </section>
+
 
   <hr class="m-0">
 
@@ -135,9 +135,14 @@
           <h3 class="mb-0">Software Engineer, <span class="subheading mb-3">Amplify.ai</span>
           </h3>
           <p class="job-description">
-            - Design and build virtual assistants and chatbots
-            <br> - Develop NLP systems according to requirements
-            <br> - Train the developed model and run evaluation experiments
+            - Design and build virtual assistant applications and chatbots
+            <br> - Develop NLP systems according to the client's requirements
+            <br> - Monitor, analyze, improve, and report account performance data
+
+            <br> - Collect and train sample utterances and improve them incrementally
+            <br> - Write MongoDB and SQL queries to retrieve data using AWS Athena and Jenkins
+            <br> - Implement bash script, and NodeJS to build backend features and automate tasks
+
           </p>
         </div>
         <div class="resume-date text-md-right">
@@ -165,6 +170,7 @@
           <p class="job-description">
             - Worked as an I&C SCI 31 (Intro to Programming with Python) course teaching staff
             <br> - Supported instructor by assisting students while they are engaged in active learning
+            <br>- Accommodated weekly office hours and grade quizzes and assignments
           </p>
         </div>
         <div class="resume-date text-md-right">
@@ -228,7 +234,8 @@
             <span class="subheading mb-2">Software Engineering, B.S.</span>
           </h3>
           <p class="school-description">
-            <span class="small-title">
+            <span class="small-title">GPA: 3.5</span>
+            <br> <span class="small-title">
               Relevant Coursework:
             </span>
             Human-Computer Interaction, Requirements Analysis and Engineering, Software
@@ -237,6 +244,7 @@
             Testing and Quality Assurance, Design and Analysis of Algorithms
           </p>
           <p class="school-description">
+
             <span class="small-title">
               Capstone Project: </span> Grid-Level Energy Negotiation for Electric Vehicle Supply Equipment<br>
             <span class="small-title">
@@ -261,6 +269,8 @@
             <span class="subheading mb-2">Computer Science and Mathematics</span>
           </h3>
           <p class="school-description">
+            <span class="small-title">GPA: 3.8</span>
+            <br>
             <span class="small-title">
               Relevant Coursework:
             </span>
@@ -312,8 +322,15 @@
               aria-hidden="true"></i>
           </a></h3>
         <p>Portfolio Design
-          <br> - Designed and Developed a business portfolio for a media production company in Irvine <br>
+          <br> - Designed and developed a business portfolio for a media production company in Irvine <br>
           - HTML, CSS, JavaScript, jQuery, and Bootstrap
+        </p>
+        <h3> <a href="https://mrhandy.vercel.app/" target="_blank"> Mr. Handy <i class="fa fa-external-link"
+              aria-hidden="true"></i>
+          </a></h3>
+        <p>Portfolio Design
+          <br> - Designed and developed a static website for a professional handyman<br>
+          - HTML, CSS, JavaScript
         </p>
         <h3><a href="http://personal-informatics.depstein.net/" target="_blank"> Paper Browser <i
               class="fa fa-external-link" aria-hidden="true"></i>
@@ -411,103 +428,44 @@
     <div class="w-100">
       <h2 class="mb-5">Skillset</h2>
       <div class="skill-set">
+
         <h3>Technical Skills</h3>
-        <div class="skill-set">
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-java"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-php"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-database"></i>
-            </li>
-            <br>
-            <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
-            </li>
-
-            <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-git-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-ubuntu"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-windows"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-linux"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-apple"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-aws"></i>
-            </li>
-          </ul>
-        </div>
-        <h3>UX Skills</h3>
-        <ul class=" mb-0">
-          <li>
-            Prototyping, Wireframing</li>
-        </ul>
-        <ul class=" mb-3">
-          <li>
-            Usability Testing, User Research </li>
-        </ul>
+        <p>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-java"></i>
+          <i class="fab fa-php"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-angular"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-bootstrap"></i>
+          <i class="fas fa-database"></i><br>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-wordpress"></i>
+          <i class="fab fa-git-alt"></i>
+          <i class="fab fa-ubuntu"></i>
+          <i class="fab fa-windows"></i>
+          <i class="fab fa-linux"></i>
+          <i class="fab fa-apple"></i>
+          <i class="fab fa-aws"></i>
+        </p>
         <h3>Soft Skills</h3>
-        <ul class=" mb-0">
-          <li>
-            Agility, Teamwork, Leadership
-          </li>
-          <li>
-            Critical thinking, Problem-Solving</li>
-        </ul>
-        <ul class=" mb-3">
-          <li>
-            Integrity, Tolerance, Commitment</li>
-        </ul>
-        <h3>Artistic Skills</h3>
 
-        <ul class=" mb-3">
-          <li>
-            Photography, Graphic Design </li>
-        </ul>
+        <p>
+          Critical thinking, Teamwork, Leadership<br>
+
+          Agility, Tolerance, Commitment
+        </p>
+        <h3>Other Skills</h3>
+        <p>
+          Graphic Design, Photography
+        </p>
         <h3>Languages</h3>
-        <ul class=" mb-0">
-          <li>
-            English, Persian</li>
-        </ul>
-        </ul>
+        <p>
+          English, Persian
+        </p>
       </div>
     </div>
   </section>
@@ -555,33 +513,35 @@
 
       <h2 class="mb-5">Memberships</h2>
       <a href="https://access.nspe.org/eweb/fileviewer.aspx?itemkey=00000000-0000-0000-0000-000000000000&objectName=reports&file=nspemembershipcertificate__nfnspe_d6044326-47e7-4cc3-9ab8-7e15fc0e159b8162020.pdf"
-        target="_blank"><img src="/img/NSPE+logo.png" alt="NSPE" height="180" width="180"
+        target="_blank"><img src="assets/img/NSPE+logo.png" alt="NSPE" height="180" width="180"
           style="height:auto;max-width:260px;" /></a>
       <a href="https://www.interaction-design.org/payam-dowlatyari/certificate/membership/QhLddtgqL"
-        target="_blank"><img src="/img/idf-logo-full-inverse.png" alt="Member of IDF" height="140" width="140"
+        target="_blank"><img src="assets/img/idf-logo-full-inverse.png" alt="Member of IDF" height="140" width="140"
           style="height:auto;max-width:350px;" /></a>
 
       <a href=" https://www.researchgate.net/profile/Payam_Dowlatyari" target="_blank"><img
-          src="/img/reserachgate2x.png" alt="researchgate" height="175" width="175"
+          src="assets/img/reserachgate2x.png" alt="researchgate" height="175" width="175"
           style="height:auto;max-width:250px;" /></a>
       <a href="https://drive.google.com/file/d/1tfrISM6f8e_MG0Qdt-7xIuhG5yM-T0Y5/view?usp=sharing" target="_blank"><img
-          src="/img/ieee-com.png" alt="ieee" height="200px" width="200px" style="height:auto;max-width:300px;" /></a>
+          src="assets/img/ieee-com.png" alt="ieee" height="200px" width="200px"
+          style="height:auto;max-width:300px;" /></a>
       <a itemprop="sameAs" content="https://orcid.org/0000-0001-9481-0394" href="https://orcid.org/0000-0001-9481-0394"
         target="orcid.widget" rel="me noopener noreferrer">
-        <img src="/img/orc-id.png" alt="orcid" height="130" width="130" style="height:auto;max-width:200px" /></a>
-      <a href="https://dl.acm.org/doi/abs/10.1145/3432231" target="_blank"><img src="img/acm_white.png" alt=""
-          height="130" width="130" style="height:auto;max-width:250px" /></a>
+        <img src="assets/img/orc-id.png" alt="orcid" height="130" width="130" style="height:auto;max-width:200px" /></a>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3432231" target="_blank"><img src="img/acm_white.png"
+          alt="Member of IDF" height="130" width="130" style="height:auto;max-width:250px" /></a>
     </div>
   </section>
 
   <hr class="m-0">
 
   <div class="container">
+
     <div class="row">
       <div class="col-md-6 col-md-offset-3 col-md-10 col-md-offset-1 col-sm-12 ">
         <div class="copyright-link text-center">
           <p> Designed by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
-              href="https://www.payamd.com/" target="_blank">www.payamd.com</a> Licensed under <a rel="license"
+              href="https://www.payamd.com/" target="_blank">payamd.com</a> Licensed under <a rel="license"
               href="https://creativecommons.org/licenses/by-nc/4.0" target="_blank">CC
               BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
                 src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img
@@ -603,7 +563,53 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="/js/resume.min.js"></script>
+  <script src="assets/js/resume.min.js"></script>
+
+  <script>
+
+    var textWrapper = document.querySelector('.ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml3 .letter',
+        opacity: [0, 0.75],
+        easing: "easeInOutQuad",
+        duration: 500,
+        delay: (el, i) => 100 * (i + 1)
+      }).add({
+        targets: '.ml3',
+        opacity: 0,
+        duration: 500,
+        easing: "easeOutExpo",
+        delay: 3000
+      });
+
+    document.getElementById("chev-up").style.display = "none";
+    document.getElementById("sideNav").style.opacity = "0.5";
+
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+
+
+      if (document.body.scrollTop < 100 && document.documentElement.scrollTop < 100) {
+
+        document.getElementById("sideNav").style.width = "100%";
+        document.getElementById("chev-down").style.display = "block";
+        document.getElementById("chev-up").style.display = "none";
+        document.getElementById("sideNav").style.opacity = "0.5";
+      } else {
+
+        document.getElementById("sideNav").style.width = "18em";
+        document.getElementById("chev-down").style.display = "none";
+        document.getElementById("chev-up").style.display = "block";
+        document.getElementById("sideNav").style.opacity = "0.75";
+      }
+    }
+  </script>
 
 </body>
 
